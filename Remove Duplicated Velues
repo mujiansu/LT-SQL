@@ -1,0 +1,15 @@
+---------SELECT-----------
+WITH CTE AS 
+(
+	SELECT ROW_NUMBER () OVER ( PARTITION BY Value  ORDER BY Value ) AS RNUM,*
+	FROM sparepart_1 
+) 
+SELECT * FROM  CTE WHERE RNUM = 2 
+
+---------DELETE------------
+WITH CTE AS 
+(
+	SELECT ROW_NUMBER () OVER ( PARTITION BY Value  ORDER BY Value ) AS RNUM,*
+	FROM sparepart_1 
+) 
+SELECT * FROM  CTE WHERE RNUM > 1 
