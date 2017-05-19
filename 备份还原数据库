@@ -1,0 +1,25 @@
+BACKUP DATABASE [数据库名]
+TO DISK='[备份目录]\[数据库名]_1a.bak', 
+   DISK='[备份目录]\[数据库名]_2a.bak', 
+   DISK='[备份目录]\[数据库名]_3a.bak',
+   DISK='[备份目录]\[数据库名]_4a.bak', 
+   DISK='[备份目录]\[数据库名]_5a.bak', 
+   DISK='[备份目录]\[数据库名]_6a.bak',
+   DISK='[备份目录]\[数据库名]_7a.bak', 
+   DISK='[备份目录]\[数据库名]_8a.bak', 
+   DISK='[备份目录]\[数据库名]_9a.bak',
+   DISK='[备份目录]\[数据库名]_aa.bak' 
+   
+   
+   
+RESTORE DATABASE [数据库名]
+FROM DISK='[备份目录]\[数据库名]_1a.bak', 
+     DISK='[备份目录]\[数据库名]_2a.bak', 
+     DISK='[备份目录]\[数据库名]_3a.bak',
+     DISK='[备份目录]\[数据库名]_4a.bak', 
+     DISK='[备份目录]\[数据库名]_5a.bak', 
+     DISK='[备份目录]\[数据库名]_6a.bak',
+     DISK='[备份目录]\[数据库名]_7a.bak', 
+     DISK='[备份目录]\[数据库名]_8a.bak', 
+     DISK='[备份目录]\[数据库名]_9a.bak',
+     DISK='[备份目录]\[数据库名]_aa.bak' 
